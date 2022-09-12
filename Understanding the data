@@ -1,0 +1,23 @@
+Understanding the Data - fields that will be used in analysis
+
+Because the unit of the duration field is not known, I will use timestamp information for any time based calculations (taking the difference between the maximum and minimum timestamp of each session and calculating the difference to determine Session duration)
+
+The data is stored in a json format. 
+
+In order for us to use the data and comprehend it we will need to unnest it. 
+
+This table captures events pertaining to user behavior in Session. Aka what tools they use, entry point, exit point, and parameters pertaining to each event.
+
+Id - unique user identifier. A unique id is assigned to each user.
+
+Sessionid- unique identifier for each Session registered.
+
+Timestamp - logs the timestamp associated to the event 
+
+Parameters: 
+
+Bakebackend - bakebackend usage info including version
+
+SourceView - the GUI used to access the particular tool. Info in here indicates what type of tool was used, including lighting tools.
+
+Lightmapsize - the size of the lightmap used
